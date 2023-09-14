@@ -24,8 +24,8 @@ export const Main = () => {
   };
 
   useEffect(() => {
-    getPosts(); // call the function every time the component is rendered
-  });
+    getPosts();
+  }, []);
 
   return (
     <div>
