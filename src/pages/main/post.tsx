@@ -96,7 +96,7 @@ export const Post = (props: PostProps) => {
       <div key={post.id + "-footer"} className="footer">
         <p>@{post.username}</p>
         <button onClick={isLiked ? removeLike : addLike}>
-          {isLiked ? <>&#128078</> : <>&#128077</>}
+          {isLiked ? <> &#128078;</> : <>&#128077;</>}
         </button>
         {likes && <p>Like: {likes?.length}</p>}
       </div>
